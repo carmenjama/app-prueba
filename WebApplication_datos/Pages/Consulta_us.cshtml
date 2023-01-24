@@ -1,0 +1,69 @@
+﻿@page
+@model WebApplication_datos.Pages.Consulta_usModel
+@{
+}
+
+<div class="row">
+    <table class="arrowes-table table-striped">
+        <tdead>
+            <tr>
+                <td>Date</td>
+                <td>states</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td>Pending</td>
+                <td>Hospitalized Currently</td>
+                <td>Hospitalized Cumulative</td>
+                <td>In IcuCurrently</td>
+                <td>In IcuCumulative</td>
+                <td>On Ventilator Currently</td>
+                <td>On Ventilator Cumulative</td>
+                <td>Date Checked</td>
+                <td>Deatd</td>
+                <td>Hospitalized</td>
+                <td>Total Test Results</td>
+                <td>Last Modified</td>
+                <td>Recovered</td>
+                <td>Total</td>
+                <td>Pos Neg</td>
+                <td>Deatd Increase</td>
+                <td>Hospitalized Increase</td>
+                <td>Negative Increase</td>
+                <td>Positive Increase</td>
+                <td>Total Test Results Increase</td>
+            </tr>
+        </tdead>
+
+        <tbody>
+            @foreach (var item in Model.Lista_us)
+            {
+                <tr>
+                    <td>@item.date</td>
+                    <td>@item.states</td>
+                    <td>@item.positive</td>
+                    <td>@item.negative</td>
+                    <td>@item.pending</td>
+                    <td>@item.hospitalizedCurrently</td>
+                    <td>@item.hospitalizedCumulative</td>
+                    <td>@item.inIcuCurrently</td>
+                    <td>@item.inIcuCumulative</td>
+                    <td>@item.onVentilatorCurrently</td>
+                    <td>@item.onVentilatorCumulative</td>
+                    <td>@item.dateChecked</td>
+                    <td>@item.death</td>
+                    <td>@item.hospitalized</td>
+                    <td>@item.totalTestResults</td>
+                    <td>@item.lastModified</td>
+                    <td>@item.recovered</td>
+                    <td>@item.total</td>
+                    <td>@item.posNeg</td>
+                    <td>@item.deathIncrease</td>
+                    <td>@item.hospitalizedIncrease</td>
+                    <td>@item.negativeIncrease</td>
+                    <td>@item.positiveIncrease</td>
+                    <td>@item.totalTestResultsIncrease</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

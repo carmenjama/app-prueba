@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    
+    <form id="login-form" method="post">
+        <div aps-asp-validation-summary="ModelOnly" class="alert-danger">
+        </div>
+        <h2 class="display-4">Ingreso al sistema</h2>
+        <p>
+            <input asp-for="credenciales.usuario" style="background-color:white; font-size: 16px;" type="email" placeholder="Ingrese usuario">
+            <span class="alert-danger" asp-validation-for="credenciales.usuario"></span>
+        </p>
+        <p>
+            <input asp-for="credenciales.clave" style="background-color:white; font-size: 16px;" type="password" placeholder="Ingrese clave">
+            <span class="alert-danger" asp-validation-for="credenciales.clave"></span>
+        </p>
+        <p>
+            <input type="submit" id="login" value="Acceder">
+        </p>
+    </form>
+
+    <div id="create-account-wrap">
+        <p><a href="#">Crear cuenta</a><p>
+    </div><!--create-account-wrap-->
+</div>
