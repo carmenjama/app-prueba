@@ -8,8 +8,8 @@ namespace ClasesNegocio.mensaje
 {
     public static class Enumerado
     {
-        public const String mensaje_ok = "OK";
-        public const String mensaje_error = "ERROR";
-        public const String mensaje_advertencia = "ADVERTENCIA";
+        public static String mensaje_ok = "OK";
+        public static String mensaje_error = "ERROR";
+        public static String mensaje_advertencia = "ADVERTENCIA";
     }
 }

@@ -16,10 +16,6 @@ namespace AccesoDatos
         public String cadena_conexion = "";
         public Conexion() {
             this.cadena_conexion = @"Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}";
-            //this.cadena_conexion.Replace("@server", server);
-            //this.cadena_conexion.Replace("@bd", bd);
-            //this.cadena_conexion.Replace("@user", user);
-            //this.cadena_conexion.Replace("@pass", pass);
             this.cadena_conexion = string.Format(this.cadena_conexion, server, bd, user, pass);
         }
     }
